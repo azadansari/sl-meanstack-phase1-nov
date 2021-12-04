@@ -1,0 +1,61 @@
+Microsoft Windows [Version 10.0.19043.1348]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\HP\Desktop\New folder (3)\sl-meanstack-phase1-nov>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\HP\Desktop\New folder (3)\sl-meanstack-phase1-nov>git add index.html
+
+C:\Users\HP\Desktop\New folder (3)\sl-meanstack-phase1-nov>git commit -m "1st change in index file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HP@LAPTOP-AD19ANBL.(none)')
+
+C:\Users\HP\Desktop\New folder (3)\sl-meanstack-phase1-nov>git config
+
+C:\Users\HP\Desktop\New folder (3)\sl-meanstack-phase1-nov>git config --global user.email "azadansari7277@gmail.com"
+
+C:\Users\HP\Desktop\New folder (3)\sl-meanstack-phase1-nov>git config --global user.name "azad ansari"
+
+C:\Users\HP\Desktop\New folder (3)\sl-meanstack-phase1-nov>git commit -m "1st change in index file"
+[main e084a70] 1st change in index file
+ 1 file changed, 5 insertions(+)
+ create mode 100644 index.html
+
+C:\Users\HP\Desktop\New folder (3)\sl-meanstack-phase1-nov>git push index.html
+fatal: invalid gitfile format: index.html
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\HP\Desktop\New folder (3)\sl-meanstack-phase1-nov>git push origin index.html
+error: src refspec index.html does not match any
+error: failed to push some refs to 'https://github.com/azadansari/sl-meanstack-phase1-nov.git'
+
+C:\Users\HP\Desktop\New folder (3)\sl-meanstack-phase1-nov>git push
+
+C:\Users\HP\Desktop\New folder (3)\sl-meanstack-phase1-nov>
+C:\Users\HP\Desktop\New folder (3)\sl-meanstack-phase1-nov>
+C:\Users\HP\Desktop\New folder (3)\sl-meanstack-phase1-nov>git push origin index.html
+error: src refspec index.html does not match any
+error: failed to push some refs to 'https://github.com/azadansari/sl-meanstack-phase1-nov.git'
+
+C:\Users\HP\Desktop\New folder (3)\sl-meanstack-phase1-nov>
