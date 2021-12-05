@@ -1,29 +1,22 @@
-function addToCart(){
-    var cart = document.getElementsByTagName("p");
-    document.getElementById("totalprice").innerHTML = cart.innerText;
-    console.log(cart.innerText);
+function addToCart() {
+
+    var itempricecart = 0;
+    let itemvalue = document.getElementById("selectQuantity").value;
+    document.getElementById("totalitem").innerHTML = itemvalue;
+
+    var itempricecart = document.getElementById("itemprice").value;
+    var itmprce = document.getElementById("showitemprice").innerHTML = itempricecart;
+    document.getElementById("showqnty").innerHTML = itemvalue;
+
+    document.getElementById("showtotal").innerHTML = itmprce*itemvalue;
 }
 
+function placeOrder(){
+    document.getElementById("placedOrder").style.display = "inherit";
+}
 
-
-
-// const addbtn = document.getElementById('addcart');
-
-// function cart(ecom) {
-//     ecom.preventDefault();
-//     const price = document.getElementById('itemprice').value;
-
-//     if (quantity > 0) {
-//         const display = document.getElementById('totalprice');
-//         let total = itemPrice * quantity;
-//         displayDetails.innerHTML = `Your total is $${total}`;
-//     } else {
-//         alert("400 : Quantity must be positive integer");
-//     }
-
-//     const display = document.getElementById('totalprice');
-// }
-
-// addcart.addEventListener('click', cart);
-
-
+// $(document).ready(function(){
+//     $("#goshop").click(function(){
+//         $("#placedOrder").fadeOut("fast");
+//     });
+// });
