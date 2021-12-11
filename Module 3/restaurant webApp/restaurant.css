@@ -1,0 +1,48 @@
+.navbar {
+    padding: 0.4rem 4rem;
+    background-color: rgb(245 245 245)!important;
+}
+.navbar-light .navbar-brand {
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    margin-right: 6%;
+}
+.navbar-light .navbar-brand span{
+    color: #0fcf0f;
+}
+
+.heroimage{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.carousel-item img{
+    height: 90vh;
+}
+.carousel-caption {
+    max-width: 500px;
+    top: 45%;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 10%;
+    background-color: rgba(0,0,0,0.55);
+    padding: 5% 2%;
+    text-align: left;
+}
+.carousel-caption h2{
+    font-weight: 800;
+}
+.carousel-caption p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.carousel-caption .btn-btn-success{
+    background-color: #0fcf0f;
+}
+.menuimages{
+    width: 100%;
+    margin: 0;
+    padding: 5% 6%;
+    text-align: center;
+}
