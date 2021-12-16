@@ -1,9 +1,9 @@
 .navbar {
-    padding: 0.4rem 4rem;
+    padding: 1rem 4rem;
     background-color: rgb(245 245 245)!important;
 }
 .navbar-light .navbar-brand {
-    font-size: 20px;
+    font-size: 30px;
     color: #000;
     font-weight: 700;
     margin-right: 6%;
@@ -11,100 +11,111 @@
 .navbar-light .navbar-brand span{
     color: #0fcf0f;
 }
-
-.heroimage{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-.carousel-item img{
-    height: 90vh;
-}
-.carousel-caption {
-    max-width: 500px;
-    top: 45%;
-    right: 15%;
-    bottom: 1.25rem;
-    left: 10%;
-    background-color: rgba(0,0,0,0.55);
-    padding: 5% 2%;
-    text-align: left;
-}
-.carousel-caption h3{
-    font-weight: 800;
-    font-size: 30px;
-}
-.carousel-caption p{
-    font-size: 20px;
+.navbar-light .navbar-nav .nav-link{
+    color: rgba(0,0,0,0.7);
+    font-size: 16px;
     font-weight: 600;
 }
-.carousel-caption .btn-success,.menuimages .btn-success{
-    background-color: #0fcf0f;
-    padding: 10px 25px!important;
-    letter-spacing: 2px;
-    border: none;
+.navbar-light .navbar-nav .nav-link:hover,.navbar-light .navbar-nav .nav-link.active{
+    color: rgba(0,0,0,0.95);
 }
-.menuimages{
-    width: 100%;
-    margin: 0;
-    padding: 5% 6%;
-    text-align: center;
-}
-.option{
-    width: 99%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-.option h2,.booktable h2, h2{
-    font-size: 60px;
-    font-weight: 300;
-    margin-bottom: 30px;
-    text-align: center;
-}
-.option h3{
-    font-weight: 700;
-}
-.option ul{
-    margin: 30px 0;
-}
-.option ul li{
-    list-style: none;
-    padding: 10px;
-}
-.option .btn-info{
-    padding: 10px 25px!important;
-    letter-spacing: 2px;
-    border: none;
-}
-.booktable{
-    width: 100%;
-    margin: 0;
-    padding: 8%;
+a.btn.btn-info {
+    color: #fff;
     background-color: #000000;
+    border-color: #000000;
+    transition: 200ms ease-in;
+    letter-spacing: 1px;
 }
-.form-control {
-    color: #b9b9b9 !important;
-    background-color: #fff0;
-    background-clip: padding-box;
-    border: 1px solid #909090;
-    border-radius: 1px;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+a.btn.btn-info:hover{
+    box-shadow: 0px 0px 22px -4px rgba(0,0,0,0.33);
+    transition: 200ms ease-in;
 }
-.form-control:focus{
-    background-color: #fff0;
-    outline: none;
-    box-shadow: none;
-    border-color: #909090;
+.heroSection{
+    width: 100%;
+    margin: 0;
+    padding: 12px;
+    background: url('img/1.jpg') no-repeat center;
+    background-size: cover;
 }
-.booktable .btn-primary {
-    padding: 10px 50px;
-    color: #000 !important;
-    letter-spacing: 2px;
-    background-color: #ffffffd1 !important;
-    border-color: #ffffffd1 !important;
-    border-radius: 1px!important;
+.heroItems{
+    max-width: 800px;
+    margin: 3% auto;
+    text-align: center;
+    padding: 3%;
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(13px) saturate(180%);
 }
-.booktable .btn-primary:hover{
-    background-color:white !important;
+.heroItems h2{
+    font-weight: 800;
+}
+.heroItems h5{
+    font-weight: 400;
+    margin: 25px auto;
+    padding: 0;
+}
+
+
+.postareaLeft{
+    border-right: 1px solid rgba(0,0,0,0.12);
+}
+.postsCard{
+    width: 86%;
+    margin: 50px auto;
+    margin-bottom: 0;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: 200ms ease;
+}
+.postsCard:hover{
+    box-shadow: 0px 0px 14px -4px rgba(0,0,0,0.22);
+    transition: 200ms ease;
+}
+.postImage{
+    width: 90%;
+    border-radius: 3px;
+}
+.postsCard p span{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.66);
+}
+.blogcategory h6 a{
+    color: #ff001e;
+    transition: 200ms ease-in;
+    text-decoration: none;
+    font-weight: 500;
+}
+.blogcategory h6 a:hover{
+    color: #ff8392;
+    transition: 100ms ease-in;
+}
+
+
+
+.blogFooter{
+    width: 100%;
+    background: black;
+    margin: 30px 0 0 0;
+    padding: 20px 20px 10px 20px;
+}
+.blogFooter p{
+    color: rgba(255,255,255,0.7);
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 0;
+}
+
+
+@media(max-width:768px){
+    .navbar {
+        padding: 1rem 0.8rem;
+    }
+    .postImage {
+        width: 100%;
+    }
+    .postsCard h4{margin-top: 20px;}
+    .postareaLeft{border: none;}
+    .postsCard {
+        width: 100%;
+    }
 }
