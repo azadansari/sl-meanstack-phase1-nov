@@ -1,5 +1,12 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
 .navbar {
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
     background-color: rgb(245 245 245)!important;
 }
 .navbar-light .navbar-brand {
@@ -11,13 +18,27 @@
 .navbar-light .navbar-brand span{
     color: #0fcf0f;
 }
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .d-flex .nav-link{
     color: rgba(0,0,0,0.7);
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 800;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
-.navbar-light .navbar-nav .nav-link:hover,.navbar-light .navbar-nav .nav-link.active{
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .d-flex .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .d-flex .nav-link.active{
     color: rgba(0,0,0,0.95);
+}
+.navbar-light .navbar-toggler-icon {
+    width: 30px;
+    margin: 10px -18px 0 0;
+}
+.navbar-light .navbar-toggler {
+    color: rgb(0 0 0 / 0%);
+    border-color: rgb(0 0 0 / 0%);
 }
 a.btn.btn-info {
     color: #fff;
@@ -45,7 +66,8 @@ a.btn.btn-info:hover{
     background: rgba(255,255,255,0.5);
     backdrop-filter: blur(13px) saturate(180%);
 }
-.heroItems h2{
+.heroItems h2,
+.pageHero h2{
     font-weight: 800;
 }
 .heroItems h5{
@@ -54,7 +76,10 @@ a.btn.btn-info:hover{
     padding: 0;
 }
 
-
+.postsarea{
+    width: 100%;
+    margin: 50px 0;
+}
 .postareaLeft{
     border-right: 1px solid rgba(0,0,0,0.12);
 }
@@ -71,7 +96,7 @@ a.btn.btn-info:hover{
     transition: 200ms ease;
 }
 .postImage{
-    width: 90%;
+    width: 100%;
     border-radius: 3px;
 }
 .postsCard p span{
@@ -89,14 +114,89 @@ a.btn.btn-info:hover{
     color: #ff8392;
     transition: 100ms ease-in;
 }
+.pageHero,
+.subscribe{
+    width: 100%;
+    margin: 0;
+    padding: 4% 1%;
+    text-align: center;
+    background: black;
+}
+.pageHero h2,
+.subscribe h2{
+    font-weight: 800;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 5px;
+}
+.subscribe .form-control{
+    max-width: 600px;
+    background: rgba(0,0,0,0.66);
+    outline: none;
+    box-shadow: none;
+    border-color: none;
+    color: rgba(255,255,255,0.8);
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    margin: 30px auto;
+}
+.subscribe .btn-success{
+    background: rgb(223, 223, 223);;
+    color: black;
+    padding: 6px 30px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border: none;
+    border-color: #000000;
+}
+.subscribe .btn-success:hover{
+    background: rgb(255, 255, 255);
+    transition: 150ms ease-in;
+}
 
+.containtBox{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 35px 2%;
+}
+
+
+.loginSignup{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.signupCard h3,
+.loginCard h3{
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.loginCard{
+    max-width: 500px;
+    margin: 81px auto;
+    padding: 30px 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.loginCard .btn-success,
+.loginCard .btn-primary,
+.signupCard .btn-success,
+.signupCard .btn-primary{
+    font-weight: 700;
+}
+.signupCard{
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.1);
+    display: none;
+}
 
 
 .blogFooter{
     width: 100%;
-    background: black;
-    margin: 30px 0 0 0;
-    padding: 20px 20px 10px 20px;
+    background: rgb(68, 68, 68);
+    margin: 0 0 0 0;
+    padding: 20px 20px 6px 20px;
 }
 .blogFooter p{
     color: rgba(255,255,255,0.7);
@@ -106,9 +206,33 @@ a.btn.btn-info:hover{
 }
 
 
+
+
+
+@media(max-width:992px){
+    
+    .nav-item{
+        padding-left: 0;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .nav-link{
+        padding: 0.8rem 3px!important;
+    }
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .d-flex .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .d-flex .nav-link.active{
+        color: rgba(0,0,0,0.95);
+        background: rgba(0,0,0,0.05);
+    }
+    .m-auto {
+        margin-top: 1rem !important;
+    }
+}
+
 @media(max-width:768px){
     .navbar {
-        padding: 1rem 0.8rem;
+        padding: 1rem 0.3rem;
     }
     .postImage {
         width: 100%;
@@ -118,4 +242,8 @@ a.btn.btn-info:hover{
     .postsCard {
         width: 100%;
     }
+}
+
+@media(max-width:767px){
+    .dnone{display: none;}
 }
