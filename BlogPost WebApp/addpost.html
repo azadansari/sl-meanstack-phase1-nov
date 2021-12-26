@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <!--  *********************  Top Section Navbar   ****************************************   -->
+    <!--  *********************  Top Section Navbar   **********************************************   -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Blog<span>Posting</span></a>
@@ -65,45 +65,46 @@
     </nav>
 
 
-    <!--  *********************  pageHero Section After Navbar   ****************************************   -->
+    <!--  *********************  pageHero Section After Navbar   ***********************************   -->
     <div class="pageHero">
         <div class="contaner-fluid">
-            <h2>Contact Us</h2>
+            <h2>Add A Post On Blog</h2>
         </div>
     </div>
 
 
-    <div class="contactBox">
+
+    <!--  *********************  AddingPost Section After pageHero   ***********************************  -->
+    <div class="containtBox">
         <div class="container">
-            <div class="row">
-                <div class="col-md-1 col-0"></div>
-                <div class="col-md-4">
-                    <h2><strong>Get In Touch</strong></h2><br>
-                    <h5><strong>Address:</strong> 1st Street Lane, CAlifornia, USA</h5>
-                    <h5><strong>Email:</strong> blogus@gmail.com</h5>
-                    <h5><strong>Phone:</strong> +112345678790</h5>
-                    <h5><strong>Website:</strong> <a href="index.html">www.siteurl.com</a></h5>
+            <h2 class="mb-4">Add Post</h2>
+            <form>
+                <input type="text" class="form-control" placeholder="Post Title"><br>
+                <textarea rows="7" class="form-control" placeholder="Post Paragraph"></textarea><br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="formFileSm" class="form-label">Choose Post Image</label><br>
+                            <img src="img/1.jpg" class="postImg"><br>
+                            <input class="form-control form-control-sm" id="formFileSm" type="file">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- <img src="img/1.jpg" class="postImg"> -->
+                    </div>
                 </div>
-                <div class="col-md-7">
-                    <form>
-                        <input type="text" class="form-control" placeholder="Name"><br>
-                        <input type="email" class="form-control" placeholder="Email"><br>
-                        <textarea rows="5" class="form-control" placeholder="Messege"></textarea><br>
-
-                        <button class="btn btn-primary col-3">Send</button><br>
-                    </form>
-                </div>
-            </div>
+                <button class="btn btn-primary col-3 mt-3">POST</button>
+            </form>
         </div>
     </div>
 
 
-    <!--  *********************  Bottom Section Footer Area   **********************************   -->
+
+    <!--  *********************  Bottom Section Footer Area   ************************************  -->
     <div class="blogFooter">
         <div class="container text-center">
             <p>All Rights Reserved 2021 by BlogPosting</p>
         </div>
     </div>
 </body>
-
 </html>

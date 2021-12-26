@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background: #f1f1f1;
 }
 html{
     scroll-behavior: smooth;
@@ -114,6 +115,29 @@ a.btn.btn-info:hover{
     color: #ff8392;
     transition: 100ms ease-in;
 }
+.followAdmin{
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.05);
+    margin: 35px auto;
+    padding: 5% 3%;
+}
+.followAdmin a i{
+    font-size: 20px;
+    padding: 6px;
+    margin: 10px 10px;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 2px;
+    transition: 250ms ease-in;
+}
+.followAdmin a i:hover{
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: 250ms ease-in;
+}
+
+
 .pageHero,
 .subscribe{
     width: 100%;
@@ -139,7 +163,7 @@ a.btn.btn-info:hover{
     margin: 30px auto;
 }
 .subscribe .btn-success{
-    background: rgb(223, 223, 223);;
+    background: rgb(223, 223, 223);
     color: black;
     padding: 6px 30px;
     letter-spacing: 1px;
@@ -153,8 +177,8 @@ a.btn.btn-info:hover{
 }
 
 .containtBox{
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: 900px;
+    margin: 2% auto;
     padding: 35px 2%;
 }
 
@@ -189,6 +213,23 @@ a.btn.btn-info:hover{
     border-radius: 5px;
     border: 1px solid rgba(0,0,0,0.1);
     display: none;
+}
+
+.contactBox{
+    margin: 8% auto;
+    text-align: left;
+    padding: 0;
+}
+.contactBox h5{
+    font-weight: 400;
+    line-height: 35px;
+}
+.postImg{
+    width: 250px;
+    border-radius: 2px;
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,0.05);
+    margin: 10px 0;
 }
 
 
