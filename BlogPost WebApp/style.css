@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: #f1f1f1;
+    background: #f1f1f180;
 }
 html{
     scroll-behavior: smooth;
@@ -199,6 +199,7 @@ a.btn.btn-info:hover{
     padding: 30px 15px;
     border-radius: 5px;
     border: 1px solid rgba(0,0,0,0.1);
+    background: white;
 }
 .loginCard .btn-success,
 .loginCard .btn-primary,
@@ -213,6 +214,7 @@ a.btn.btn-info:hover{
     border-radius: 5px;
     border: 1px solid rgba(0,0,0,0.1);
     display: none;
+    background: white;
 }
 
 .contactBox{
